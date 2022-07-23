@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780bafc3717c13e4db53adf871c76c72, type: 3}
+  m_Name: Word
+  m_EditorClassIdentifier: 
+  windowName: Writing
+  icon: {fileID: 2800000, guid: 451fa087da86f70478d874ec424b5864, type: 3}
+  window: {fileID: 8160311948218276395, guid: 164051f92174a9a47b107ed664919144, type: 3}
+  showOnDesktop: 1
+  showOnTaskbar: 1
