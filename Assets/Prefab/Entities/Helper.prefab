@@ -110,10 +110,10 @@ RectTransform:
   m_Father: {fileID: 5259027701435632497}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2, y: 1}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &2773369073431579837
 MeshRenderer:
@@ -185,8 +185,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Here's some example text to occupy this text box. Who knows what kind of
-    wacky fox things our friend will have to say
+  m_text: "Here's some example text to occupy this text box. \nWho knows what kind
+    of wacky fox things our friend will have to say."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
   m_sharedMaterial: {fileID: -3046313752918075715, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
@@ -195,8 +195,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280032284
-  m_fontColor: {r: 0.10980392, g: 0.10980392, b: 0.10980392, a: 1}
+    rgba: 4293125091
+  m_fontColor: {r: 0.89, g: 0.89, b: 0.89, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -213,14 +213,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.16
-  m_fontSizeBase: 0.16
+  m_fontSize: 0.44
+  m_fontSizeBase: 0.44
   m_fontWeight: 400
   m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMin: 0
+  m_fontSizeMax: 3
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -289,10 +289,10 @@ RectTransform:
   m_Father: {fileID: 8096790101227476761}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0881, y: 0}
-  m_SizeDelta: {x: 2, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5262225844786774098
 CanvasRenderer:
@@ -315,14 +315,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.97605395, b: 0.8443396, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0a9c7adf4963ed74c806517dd1c4658e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd019e062984735489653484d641f901, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 151.03
+  m_PixelsPerUnitMultiplier: 120
 --- !u!1 &6564016090328298436
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8096790101227476761
 RectTransform:
   m_ObjectHideFlags: 0
@@ -367,8 +367,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.907, y: 0.626}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0.41575, y: 2.6}
+  m_SizeDelta: {x: 4.5715, y: 2.6665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6579256644698259974
 GameObject:
@@ -379,6 +379,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7433472976303024458}
+  - component: {fileID: 1945598808}
+  - component: {fileID: 1945598809}
   m_Layer: 0
   m_Name: Helper
   m_TagString: Untagged
@@ -408,6 +410,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &1945598808
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579256644698259974}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.0629201, y: 1.2588851}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.524398, y: 5.615601}
+  m_EdgeRadius: 0
+--- !u!114 &1945598809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579256644698259974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8ea4734335ef44c9485f4a1b933390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 6564016090328298436}
+  display: {fileID: 2548568787750172497}
+  expressionHolder: {fileID: 3560586427902120340}
+  expressions:
+  - {fileID: -1612334765, guid: 621393cf7ab491a4f99d3d896d091044, type: 3}
+  - {fileID: -842900039, guid: 621393cf7ab491a4f99d3d896d091044, type: 3}
+  - {fileID: -1326540441, guid: 621393cf7ab491a4f99d3d896d091044, type: 3}
+  - {fileID: 206539440, guid: 621393cf7ab491a4f99d3d896d091044, type: 3}
+  - {fileID: -1610614767, guid: 621393cf7ab491a4f99d3d896d091044, type: 3}
 --- !u!1 &6663238415097271443
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +493,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 3.74, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6494577624855118483
 CanvasRenderer:
@@ -474,7 +523,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1612334765, guid: 621393cf7ab491a4f99d3d896d091044, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
