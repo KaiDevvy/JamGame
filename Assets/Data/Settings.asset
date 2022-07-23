@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowName: Settings
   icon: {fileID: 2800000, guid: 432a05611a678054385e41ae55d2c81d, type: 3}
-  window: {fileID: 8160311948218276395, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+  window: {fileID: 4046465898371514381, guid: 9cc3112f55acf1d419475a975ce4dab5, type: 3}
   showOnDesktop: 1
   showOnTaskbar: 1

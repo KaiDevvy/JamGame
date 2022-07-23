@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780bafc3717c13e4db53adf871c76c72, type: 3}
-  m_Name: Word
+  m_Name: Login
   m_EditorClassIdentifier: 
-  windowName: Writing
-  icon: {fileID: 2800000, guid: 451fa087da86f70478d874ec424b5864, type: 3}
-  window: {fileID: 4046465898371514381, guid: 164051f92174a9a47b107ed664919144, type: 3}
-  showOnDesktop: 1
-  showOnTaskbar: 1
+  windowName: Login
+  icon: {fileID: 0}
+  window: {fileID: 9162947033878684293, guid: 9a7f2859638f53d4e8f74208ef46d9d4, type: 3}
+  showOnDesktop: 0
+  showOnTaskbar: 0
