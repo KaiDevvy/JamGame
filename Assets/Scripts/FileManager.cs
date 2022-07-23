@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class FileManager : MonoBehaviour
 {
@@ -9,14 +10,21 @@ public class FileManager : MonoBehaviour
 
     private void Awake()
     {
-        PopulateFromPath("C:/Users/kaiso/Documents/UnityProjects/JamGame");
+        PopulateFromPath("C:/");
     }
 
     public void PopulateFromPath(string path)
     {
-        foreach (string folder in Directory.GetDirectories(path))
+        string[] folders = Directory.GetDirectories(path);
+        for (int i = 0; i < folders.Length; i++)
         {
-            Instantiate(filePrefab, filePool).GetComponentInChildren<TextMeshProUGUI>().SetText(Path.GetFileName(folder));
+            if (i >= 25)
+                break;
+
+            string folder = folders[i];
+            string folderName = Path.GetFileName(folder).Truncate(8);
+
+            Instantiate(filePrefab, filePool).GetComponentInChildren<TextMeshProUGUI>().SetText(folderName);
         }
 
     }
