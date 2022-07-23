@@ -1,0 +1,117 @@
+{
+    "lines": [{
+            "text": "Dance time..?",
+            "expression": 2,
+            "letterDelay": 0.2
+        },
+        {
+            "text": "......",
+            "expression": 2,
+            "letterDelay": 0.2,
+            "autoAfter": 1
+        },
+
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": false,
+            "expression": 1,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "expression": 1,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": false,
+            "expression": 1,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": false,
+            "expression": 4,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "expression": 4,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": false,
+            "expression": 4,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "expression": 4,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": false,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": false,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": false,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+        {
+            "text": "      ",
+            "flipSprite": true,
+            "autoAfter": 0.05,
+            "hideBox": true
+        },
+
+
+        {
+            "text": "Dance complete!"
+        }
+    ]
+}
