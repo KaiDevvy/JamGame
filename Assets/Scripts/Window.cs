@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Window : MonoBehaviour
 {
     [Header("References")]
     public RawImage barIcon;
+    public TextMeshProUGUI barTitle;
 
     public WindowData data;
     private bool _isHidden = true;
     private Coroutine _showing;
     private Coroutine _hiding;
     private ClickableIcon _taskbarIcon;
+
+    public bool isFocused = false;
 
     private readonly float _animDuration = 0.2f;
 
@@ -25,6 +29,7 @@ public class Window : MonoBehaviour
         }
 
         barIcon.texture = data.icon;
+        barTitle.SetText(data.name);
     }
 
     public void Show(Vector2 startPos)
