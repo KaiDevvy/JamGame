@@ -15,12 +15,17 @@ public class Window : MonoBehaviour
     private Coroutine _hiding;
     private ClickableIcon _taskbarIcon;
 
-    public bool isFocused = false;
+    public bool isLocked = false;
 
     private readonly float _animDuration = 0.2f;
 
+    
+
     private void Start()
     {
+        if (data.locked)
+            Destroy(gameObject);
+
         if (data.showOnTaskbar)
         {
             _taskbarIcon = Instantiate(OSManager.instance.iconPrefab, OSManager.instance.taskbarIconPool)
@@ -34,6 +39,9 @@ public class Window : MonoBehaviour
 
     public void Show(Vector2 startPos)
     {
+        if (isLocked)
+            return;
+
         // Currently playing this animation, don't touch it
         if (_showing != null || !_isHidden)
             return;

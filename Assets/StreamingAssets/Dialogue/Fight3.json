@@ -1,0 +1,9 @@
+{
+    "lines": [{
+            "text": "I said stop!",
+            "expression": 4,
+            "autoAfter": 3
+        }
+
+    ]
+}

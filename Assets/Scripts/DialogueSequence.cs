@@ -9,8 +9,6 @@ public class DialogueSequence
 {
     public Queue<Dialogue.Line> queue;
 
-    public event DialogueEvent OnNextLine;
-    public event Action OnDialogueEnd;
 
     public bool IsComplete() =>
         queue == null || queue.Count == 0;
@@ -34,7 +32,6 @@ public class DialogueSequence
         return queue.Dequeue();
     }
 
-    public delegate void DialogueEvent(Dialogue dialogue);
 
 }
 

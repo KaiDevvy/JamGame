@@ -2,19 +2,23 @@
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
+using System.Linq;
 
 public class FileManager : MonoBehaviour
 {
+    public static FileManager instance;
     public GameObject filePrefab;
     public Transform filePool;
 
     private void Awake()
     {
-        PopulateFromPath("C:/");
+        instance = this;
+        PopulateFromPath(Path.GetPathRoot(Application.dataPath));
     }
 
     public void PopulateFromPath(string path)
     {
+        ClearChildren(filePool);
         string[] folders = Directory.GetDirectories(path);
         for (int i = 0; i < folders.Length; i++)
         {
@@ -27,5 +31,13 @@ public class FileManager : MonoBehaviour
             Instantiate(filePrefab, filePool).GetComponentInChildren<TextMeshProUGUI>().SetText(folderName);
         }
 
+    }
+
+    private void ClearChildren(Transform parent)
+    {
+        var tempList = parent.Cast<Transform>().ToList();
+        foreach (Transform child in tempList)
+                Destroy(child.gameObject);
+            
     }
 }

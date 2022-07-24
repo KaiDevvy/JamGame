@@ -18,6 +18,9 @@ public class InteractionManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetMouseButtonUp(0))
+            AudioSystem.PlayOneshot("click", 0.25f);
+
         if (_currentInteractable != null)
         {
             if (Input.GetMouseButtonDown(0))

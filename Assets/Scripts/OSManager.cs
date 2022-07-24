@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class OSManager : MonoBehaviour
 {
@@ -10,9 +11,11 @@ public class OSManager : MonoBehaviour
     public Transform canvas;
     public Transform desktopIconPool;
     public Transform taskbarIconPool;
+    public Graphic desktopBackground;
     public GameObject iconPrefab;
 
     public static OSManager instance;
+    public static Dictionary<string, ClickableIcon> desktopIcons = new Dictionary<string, ClickableIcon>();
 
     private void Awake()
     {
@@ -25,8 +28,12 @@ public class OSManager : MonoBehaviour
         {
             if (window.showOnDesktop)
             {
-                Instantiate(iconPrefab, desktopIconPool)
-                    .GetComponent<ClickableIcon>().SetLink(window);
+                ClickableIcon icon = Instantiate(iconPrefab, desktopIconPool)
+                    .GetComponent<ClickableIcon>();
+
+                icon.SetLink(window);
+
+                desktopIcons.Add(window.windowName, icon);
             }
         }
     }

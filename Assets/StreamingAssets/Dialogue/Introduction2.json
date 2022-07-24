@@ -1,0 +1,16 @@
+{
+    "lines": [{
+            "text": "Wait!!!",
+            "expression": 1
+        },
+        {
+            "text": " ",
+            "autoAfter": 1,
+            "hideBox": true,
+            "expression": 1
+        },
+        {
+            "text": "Oh, nevermind. I thought you spelled that wrong!"
+        }
+    ]
+}

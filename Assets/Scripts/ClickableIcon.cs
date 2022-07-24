@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ClickableIcon : Interactable
 {
-    private WindowData data;
+    public WindowData data;
     private RawImage _image;
     public Window trackedInstance;
 
@@ -28,7 +28,7 @@ public class ClickableIcon : Interactable
     public override void ClickEnd()
     { base.ClickEnd();
 
-        if (data == null)
+        if (data == null || data.locked)
             return;
 
         if (trackedInstance == null)

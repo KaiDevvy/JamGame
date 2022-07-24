@@ -9,6 +9,7 @@ public class WindowData : ScriptableObject
     public GameObject window;
     public bool showOnDesktop = true;
     public bool showOnTaskbar = true;
+    public bool locked = false;
 
 
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
@@ -6,6 +7,7 @@ using TMPro;
 
 public class DialogueSystem : Interactable
 {
+    public static DialogueSystem current;
     public GameObject dialogueObject;
     public TextMeshProUGUI display;
     public Image expressionHolder;
@@ -15,13 +17,24 @@ public class DialogueSystem : Interactable
     private Dialogue.Line _currentLine;
     private Coroutine _printing;
 
+
+    public event DialogueEvent OnNextLine;
+    public event Action OnDialogueEnd;
+
     private void Awake()
     {
-        StartDialogue("Test");
+        current = this;
+        gameObject.SetActive(false);
+    }
+
+    public bool IsTalking()
+    {
+        return _printing != null;
     }
 
     public void StartDialogue(string dialogueID)
     {
+        gameObject.SetActive(true);
         dialogueObject.SetActive(true);
         _currentSequence = new DialogueSequence(dialogueID);
         DrawNext();
@@ -43,19 +56,23 @@ public class DialogueSystem : Interactable
         if (_currentSequence.IsComplete())
         {
             dialogueObject.SetActive(false);
+            OnDialogueEnd?.Invoke();
             return;
         }
 
-        _currentLine = _currentSequence.Next();
 
-        if (_currentLine.autoAfter == 0 && _printing != null)
+        if (_printing != null)
         {
+            /*
             StopCoroutine(_printing);
             _printing = null;
-            display.text = _currentLine?.text ?? "";
+            display.text = _currentLine?.text ?? ""; */
             return;
         }
+        
+        _currentLine = _currentSequence.Next();
 
+        OnNextLine?.Invoke(_currentLine);
         _printing = StartCoroutine(PrintText());
     }
 
@@ -67,9 +84,9 @@ public class DialogueSystem : Interactable
 
         WaitForSeconds waitTime = new WaitForSeconds(_currentLine.letterDelay);
 
-        for (int i = 0; i < _currentLine.text.Length; i++)
+        for (int i = 0; i < _currentLine.text.Length+1; i++)
         {
-            display.text = _currentLine.text[..(i+1)];
+            display.text = _currentLine.text[..(i)] + "<alpha=#00>" + _currentLine.text[(i)..];
 
             yield return waitTime;
         }
@@ -85,5 +102,7 @@ public class DialogueSystem : Interactable
         }
 
     }
+
+    public delegate void DialogueEvent(Dialogue.Line line);
 
 }

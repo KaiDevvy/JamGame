@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f19290a0054d64eb8376b7b67397e3, type: 3}
+  m_Name: MouseClick
+  m_EditorClassIdentifier: 
+  id: click
+  clips:
+  - {fileID: 8300000, guid: 45566a89ff1f2154b8e87bfc7995ac5f, type: 3}
+  - {fileID: 8300000, guid: 874cda2b57e3e964c84f4703ac65f1ab, type: 3}
+  - {fileID: 8300000, guid: 39a52710612b52249ae7467b83ce85e3, type: 3}
+  - {fileID: 8300000, guid: ef0ccbf084bbeb64d9e251b4390fd1d4, type: 3}
+  pitchRange: 0

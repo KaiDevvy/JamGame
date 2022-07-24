@@ -1,0 +1,153 @@
+{
+    "lines": [{
+            "text": "STOP STOP STOP STOP STOP STOP STOP STOP STOP STOP STOP STOP STOP STOP STO",
+            "expression": 4,
+            "autoAfter": 0.1,
+            "eventIdentifier": "MegaAngie"
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 4,
+            "flipSprite": false,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.02,
+            "expression": 4,
+            "flipSprite": true,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.8,
+            "expression": 4,
+            "flipSprite": true,
+            "positionX": 7.0,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 3,
+            "flipSprite": false,
+            "positionX": 7.0,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.1,
+            "expression": 4,
+            "flipSprite": true,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 2,
+            "flipSprite": false,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 1,
+            "flipSprite": false,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.02,
+            "expression": 4,
+            "flipSprite": true,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 3,
+            "flipSprite": true,
+            "positionX": 7.0,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 0,
+            "flipSprite": false,
+            "positionX": 7.0,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.1,
+            "expression": 2,
+            "flipSprite": true,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 4,
+            "flipSprite": false,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 1,
+            "flipSprite": false,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.02,
+            "expression": 4,
+            "flipSprite": true,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 0,
+            "flipSprite": true,
+            "positionX": 7.0,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.01,
+            "expression": 3,
+            "flipSprite": false,
+            "positionX": 7.0,
+            "positionY": -6.98
+        },
+        {
+            "letterDelay": 0.0001,
+            "autoAfter": 0.1,
+            "expression": 4,
+            "flipSprite": true,
+            "positionX": 7.77,
+            "positionY": -6.98
+        },
+        {
+            "autoAfter": 0.01
+        }
+
+
+
+    ]
+}

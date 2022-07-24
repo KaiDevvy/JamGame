@@ -8,6 +8,11 @@ public class LoginScreenController : MonoBehaviour
 {
     public Button loginButton;
 
+
+    private void Awake()
+    {
+        Screen.SetResolution(1440, 1080, true);
+    }
     public static void QuitGame()
     {
 #if !UNITY_EDITOR

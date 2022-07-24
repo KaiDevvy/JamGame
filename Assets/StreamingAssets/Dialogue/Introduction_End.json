@@ -1,0 +1,49 @@
+{
+    "lines": [
+
+        {
+            "text": "Hey, you know what, maybe writing isn't your strong suit..",
+            "expression": 1
+        },
+        {
+            "text": "But that's ok! There's other things I can help with!"
+        },
+        {
+            "hideBox": true,
+            "expression": 2,
+            "autoAfter": 2
+        },
+        {
+            "text": "Oh, I have an idea!",
+            "eventIdentifier": "closeWord"
+        },
+        {
+            "hideBox": true,
+            "expression": 2,
+            "eventIdentifier": "OpenFiles",
+            "autoAfter": 2
+        },
+        {
+            "hideBox": true,
+            "expression": 2,
+            "eventIdentifier": "OpenUser",
+            "autoAfter": 2
+        },
+        {
+            "hideBox": true,
+            "expression": 2,
+            "eventIdentifier": "OpenDocuments",
+            "autoAfter": 2
+        },
+        {
+            "text": "Here! I can help you clean up some system files!"
+        },
+        {
+            "expression": 2,
+            "autoAfter": 0.01,
+            "eventIdentifier": "AntiVirus",
+            "hideBox": true
+        }
+
+    ]
+}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780bafc3717c13e4db53adf871c76c72, type: 3}
+  m_Name: File
+  m_EditorClassIdentifier: 
+  windowName: File Manager
+  icon: {fileID: 2800000, guid: 2147d219f4260834ea2afe341c534188, type: 3}
+  window: {fileID: 7178942638110760388, guid: c6cc533acf55a1e40981b525ac18eebb, type: 3}
+  showOnDesktop: 1
+  showOnTaskbar: 1
+  locked: 0

@@ -139,7 +139,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Example Title
+  m_text: Computer AI
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
   m_sharedMaterial: {fileID: -3046313752918075715, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
@@ -349,8 +349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Long essay the the player will in theory be typing and here's some longer
-    text I should probably be generating lorem ipsum for this but I'm too lazy.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
   m_sharedMaterial: {fileID: -3046313752918075715, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
@@ -485,7 +484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interesting Subtitle
+  m_text: And Various Applications
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
   m_sharedMaterial: {fileID: -3046313752918075715, guid: c506e3df2d78c1041b16edb30be38df9, type: 2}
@@ -599,6 +598,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8160311947057611952, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160311947057611952, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160311947057611952, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160311947057611952, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160311947856256796, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160311947856256796, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160311947856256796, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8160311947856256796, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8160311947991019677, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
       propertyPath: m_Color.b
       value: 0.73800004
@@ -701,8 +732,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+--- !u!1 &4046465898371514381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8160311948218276395, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+  m_PrefabInstance: {fileID: 5267152389026585126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &7044569966437625737
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4046465898371514381}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.10518646, y: -0.9788437}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.035965, y: 9.925674}
+  m_EdgeRadius: 0
+--- !u!114 &3253744982989574282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4046465898371514381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c63b71d4d3d4c449e8cf89c5e2beb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  window: {fileID: 4490788659794279427}
+  mouseCaptureArea: {fileID: 7044569966437625737}
+  textBody: {fileID: 7794739115767985821}
 --- !u!224 &4046465898597771962 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8160311947991019676, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
   m_PrefabInstance: {fileID: 5267152389026585126}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4490788659794279427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8595915174402352677, guid: 75b72201839606746b23bbe0e0c658f7, type: 3}
+  m_PrefabInstance: {fileID: 5267152389026585126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4046465898371514381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1eb425d7f02b464290445c632dcf84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

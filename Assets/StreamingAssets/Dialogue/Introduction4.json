@@ -1,0 +1,26 @@
+{
+    "lines": [{
+            "text": "Hey! Are you sure about those last few sentences..?"
+        },
+        {
+            "text": "I just think.. if you put a little more time in, you could do better!",
+            "expression": 3
+        },
+
+        {
+            "text": "Here, lets try this part again",
+            "expression": 2
+        },
+        {
+            "text": "........",
+            "eventIdentifier": "rewrite",
+            "expression": 2,
+            "letterDelay": 0.2
+        },
+
+        {
+            "text": "There! Now lets try that again"
+        }
+
+    ]
+}

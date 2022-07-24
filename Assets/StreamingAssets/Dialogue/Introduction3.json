@@ -1,0 +1,12 @@
+{
+    "lines": [{
+            "expression": 2,
+            "autoAfter": 2,
+            "hideBox": true
+        },
+        {
+            "autoAfter": 0.001,
+            "hideBox": true
+        }
+    ]
+}

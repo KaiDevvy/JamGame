@@ -25,5 +25,8 @@ public class Dialogue
         public bool flipSprite = false;
         public float autoAfter = 0;
         public bool hideBox = false;
+        public float positionX = 7.77f;
+        public float positionY = -6.98f;
+
     }
 }

@@ -1,0 +1,19 @@
+{
+    "lines": [
+
+        {
+            "hideBox": true,
+            "autoAfter": 1,
+            "expression": 2
+        },
+        {
+            "text": "Hey there! I'm Bishop, your personal writing assistant! I can help you write this essay!"
+        },
+        {
+            "text": "I can make suggestions and provide corrections while you're writing"
+        },
+        {
+            "text": "Just keep typing, and I'll help out where I can!"
+        }
+    ]
+}
